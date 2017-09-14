@@ -12,9 +12,8 @@ def work(bot, *prices)
 end
 
 # HH_CONFIG['telegram_bot_token']
-bot = TgBot.new('446191600:AAHTo0ExMfSEK8WPa5ho0izuUsSutroB044')
+bot = TgBot.new(ENV['TGBOTAPITOKEN'])
 crypto_prices = CoinMarketCapApi.new()
 fiat_prices = FiatCurrenciesApi.new()
 
 work(bot, crypto_prices, fiat_prices)
-
