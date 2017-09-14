@@ -8,7 +8,7 @@ PLATFORMS
 DEPENDENCIES
 
 RUBY VERSION
-   ruby 1.9.3p551
+   ruby 2.4.0p0
 
 BUNDLED WITH
-   1.15.0
+   1.15.4
