@@ -1,1 +1,1 @@
-web: ruby ./script.rb
+worker: ruby ./script.rb
