@@ -14,7 +14,6 @@ class CommonApi
 	    uri = URI.parse(URI.encode(full_url(path, params)))
 	    http = Net::HTTP.new(uri.host, uri.port)
 	    http.use_ssl = true
-	    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 	    http = http.start
 	    http.read_timeout = 30
 	    tries ||= 5
