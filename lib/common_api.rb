@@ -18,6 +18,7 @@ class CommonApi
 	    http.read_timeout = 30
 	    tries ||= 5
 	    begin
+	    	print("!!!!!!!!!!!!!=#{uri.to_s}")
 	      response = http.send(method_name, uri.to_s)
 	      if response.code == '200'
 	        JSON.parse(response.body)

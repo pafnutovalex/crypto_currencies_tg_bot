@@ -1,4 +1,4 @@
-class FiatCurrenciesApi < CommonApi
+class FiatCurrenciesApi < CommonApi  
   def initialize()
   	self.api_url = "https://api.fixer.io/"
   end
